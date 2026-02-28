@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой форум</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Простой форум</a></h1>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <!-- Навигация будет заполняться через JavaScript -->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="header-actions">
+                <h2>Ветки форума</h2>
+                <button id="create-category-btn" class="btn" style="display: none;" onclick="location.href='create-category.html'">
+                    Создать новую ветку
+                </button>
+            </div>
+
+            <div id="categories-list" class="categories">
+                <!-- Категории будут загружаться через JavaScript -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
