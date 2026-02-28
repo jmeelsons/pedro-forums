@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание темы - Простой форум</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Простой форум</a></h1>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Навигация будет заполняться через JavaScript -->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>Создание новой темы</h2>
+                
+                <div id="error-message" class="alert error" style="display: none;"></div>
+                <div id="success-message" class="alert success" style="display: none;"></div>
+                
+                <form id="create-topic-form">
+                    <div class="form-group">
+                        <label for="title">Заголовок темы:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="content">Содержание:</label>
+                        <textarea id="content" name="content" rows="6" required></textarea>
+                    </div>
+                    
+                    <input type="hidden" id="category-id" name="categoryId">
+                    
+                    <button type="submit" class="btn btn-primary">Создать тему</button>
+                    <a href="#" id="cancel-btn" class="btn">Отмена</a>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
